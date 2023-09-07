@@ -47,3 +47,10 @@ const pizzas = [
     ingredientes: ["Muzzarella", "Tomate", "Anana"],
   },
 ];
+
+//a)  Las pizzas que tengan un id impar.
+
+const idImpares = pizzas.filter((pizzas) => {
+  return pizzas.id % 2;
+});
+console.log(idImpares);
