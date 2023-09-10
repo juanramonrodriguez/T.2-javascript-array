@@ -66,3 +66,11 @@ pizzas.forEach((pizza) => {
 pizzas.forEach((pizza) => {
   console.log(pizza["nombre"] + " / " + pizza["precio"]);
 });
+
+//d) Todos los ingredientes de cada pizza (En cada iteración imprimir los ingredientes de la pizza que se esta recorriendo). Ayuda: van a tener que realizar dos recorridos, ya que cada pizza del array de pizzas tiene una propiedad "ingredientes" cuyo valor es un array con ingredientes.
+
+pizzas.map((pizza) => {
+  console.log(
+    pizza["nombre"] + "/ " + "Ingredientes= " + pizza["ingredientes"]
+  );
+});
